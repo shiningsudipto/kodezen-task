@@ -7,11 +7,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ==========
+Side bar 
+============*/
+
 .leftSidebar{
 height: 100vh;
 }
 .leftSidebarActions{
   height: 100%;
   border: 1px solid rgb(233, 233, 233);
-  
+}
+
+/* ==========
+Left side bar 
+============*/
+
+.mainActions{
+  border-bottom: 1px solid rgb(233, 233, 233);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actionIcon{
+  padding: 10px 0;
+  width: 33.33%;
+font-size: 45px;
+border-bottom: 3px solid transparent;
+}
+.actionIcon:hover{
+  border-bottom: 3px solid black;
+}
+.actionIcon:nth-child(2){
+  border-bottom: 3px solid black;
 }
