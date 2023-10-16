@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.leftSidebar{
+height: 100vh;
+}
+.leftSidebarActions{
+  height: 100%;
+  border: 1px solid rgb(233, 233, 233);
+  
+}
