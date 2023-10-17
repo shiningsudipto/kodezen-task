@@ -14,17 +14,17 @@ function App() {
     textTransform: "none",
     fontStyle: "normal",
     textDecoration: "none",
-    fontSizeValueUnit: "px",
-    lineHeightValueUnit: "px",
-    letterSpacingValueUnit: "px",
-    wordSpacingValueUnit: "px",
+    fontSizeValueUnit: "",
+    lineHeightValueUnit: "",
+    letterSpacingValueUnit: "",
+    wordSpacingValueUnit: "",
   });
 
   return (
     <>
       <div className="mainLayout">
-        <LeftSidebar formData={formData} setFormData={setFormData} className="leftSidebar"></LeftSidebar>
-        <RightSidebar className="rightSidebar"></RightSidebar>
+        <LeftSidebar formData={formData} setFormData={setFormData}></LeftSidebar>
+        <RightSidebar formData={formData}></RightSidebar>
       </div>
     </>
   )

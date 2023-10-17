@@ -129,7 +129,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         <option value="none">Default</option>
                         <option value="solid">Solid</option>
                         <option value="dotted">Dotted</option>
-                        <option value="wavy">Wavy</option>
+                        <option value="dashed">Dashed</option>
                     </select>
                 </div>
                 <div className="actionGap">
