@@ -7,11 +7,13 @@ import { TbWorld } from 'react-icons/tb';
 import { BiSolidEditAlt } from 'react-icons/bi';
 import { useState } from 'react';
 import Modal from './Modal';
-const LeftSidebar = () => {
-    let [isOpen, setIsOpen] = useState(true)
+const LeftSidebar = ({ formData, setFormData }) => {
+
+    let [isOpen, setIsOpen] = useState(false)
+
     return (
         <div className='leftSidebar'>
-            <Modal setIsOpen={setIsOpen} isOpen={isOpen} />
+            <Modal formData={formData} setFormData={setFormData} setIsOpen={setIsOpen} isOpen={isOpen} />
             <div className="heading flex items-center justify-between bg-black text-white p-2">
                 <AiOutlineMenu className='cursor-pointer' />
                 <p>Edit Heading</p>

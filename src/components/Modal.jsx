@@ -6,7 +6,7 @@ import { GrRotateLeft } from 'react-icons/gr';
 import { BiPlus } from 'react-icons/bi';
 import ModalActions from './ModalActions';
 
-const Modal = ({ isOpen, setIsOpen }) => {
+const Modal = ({ isOpen, setIsOpen, formData, setFormData }) => {
 
     function closeModal() {
         setIsOpen(false)
@@ -58,7 +58,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
                                     </Dialog.Title>
                                     {/* Body */}
                                     <div className="p-2">
-                                        <ModalActions />
+                                        <ModalActions formData={formData} setFormData={setFormData} />
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>

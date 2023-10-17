@@ -2,28 +2,13 @@ import { useState } from "react";
 
 import { LuMonitor } from 'react-icons/lu';
 
-const ModalActions = () => {
+const ModalActions = ({ formData, setFormData }) => {
 
-    // const [fontsizeValue, setfontSizeValue] = useState(50);
+    // const [fontsizeValue, setFontSizeValue] = useState(50);
     // const [lineHeightValue, setLineHeightValue] = useState(13);
     // const [letterSpacingValue, setLetterSpacingValue] = useState(0);
     // const [wordSpacingValue, setWordSpacingValue] = useState(0);
 
-    const [formData, setFormData] = useState({
-        fontSizeValue: 20,
-        lineHeightValue: 13,
-        letterSpacingValue: 0,
-        wordSpacingValue: 0,
-        fontFamily: "",
-        fontWeight: "400",
-        textTransform: "none",
-        fontStyle: "normal",
-        textDecoration: "none",
-        fontSizeValueUnit: "px",
-        lineHeightValueUnit: "px",
-        letterSpacingValueUnit: "px",
-        wordSpacingValueUnit: "px",
-    });
     console.log(formData);
 
     // const handleSizeSliderChange = (event) => {
