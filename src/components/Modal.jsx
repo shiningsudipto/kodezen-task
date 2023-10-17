@@ -33,8 +33,8 @@ const Modal = ({ isOpen, setIsOpen }) => {
                         <div className="fixed inset-0" />
                     </Transition.Child>
 
-                    <div className="fixed inset-0 overflow-y-auto mt-[13rem]">
-                        <div className="w-[21.7%] p-2 ">
+                    <div className="fixed inset-0 overflow-y-auto mt-[10.5rem]">
+                        <div className="w-[21.7%] min-w-[270px] p-2 ">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"

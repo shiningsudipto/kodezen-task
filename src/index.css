@@ -44,6 +44,7 @@ Side bar
 .leftSidebar{
   width: 22%;
   height: 100vh;
+  min-width: 270px;
 }
 .rightSidebar{
   width: 68%;
