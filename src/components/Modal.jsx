@@ -1,6 +1,9 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 
+import { GrRotateLeft } from 'react-icons/gr';
+import { BiPlus } from 'react-icons/bi';
+
 const Modal = ({ isOpen, setIsOpen }) => {
 
     function closeModal() {
@@ -43,9 +46,13 @@ const Modal = ({ isOpen, setIsOpen }) => {
                                     {/* Heading */}
                                     <Dialog.Title
                                         as="h3"
-                                        className="text-lg font-medium leading-6 text-gray-900"
+                                        className="spaceBetween text-lg font-bold leading-6 text-gray-900"
                                     >
-
+                                        Typography
+                                        <div className='flex'>
+                                            <GrRotateLeft className='sizedIcon shadow-md me-1' />
+                                            <BiPlus className='sizedIcon shadow-md' />
+                                        </div>
                                     </Dialog.Title>
                                     {/* Body */}
                                     <div className="mt-2">
