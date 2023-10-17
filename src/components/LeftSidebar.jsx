@@ -5,9 +5,13 @@ import { BsCircleHalf } from 'react-icons/bs';
 import { FcSettings } from 'react-icons/fc';
 import { TbWorld } from 'react-icons/tb';
 import { BiSolidEditAlt } from 'react-icons/bi';
+import { useState } from 'react';
+import Modal from './Modal';
 const LeftSidebar = () => {
+    let [isOpen, setIsOpen] = useState(true)
     return (
         <div className='leftSidebar'>
+            <Modal setIsOpen={setIsOpen} isOpen={isOpen} />
             <div className="heading flex items-center justify-between bg-black text-white p-2">
                 <AiOutlineMenu className='cursor-pointer' />
                 <p>Edit Heading</p>
@@ -41,7 +45,7 @@ const LeftSidebar = () => {
                             <div>
                                 <TbWorld className='typographyWorldIcon sizedIcon' />
                             </div>
-                            <BiSolidEditAlt className='typographyEditIcon sizedIcon' />
+                            <BiSolidEditAlt onClick={() => setIsOpen(!isOpen)} className='typographyEditIcon sizedIcon' />
                         </div>
                     </div>
                     <div className='textStroke spaceBetween actionGap'>
