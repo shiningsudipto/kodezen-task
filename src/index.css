@@ -122,7 +122,10 @@ content: '';
   border: 1px solid rgb(233, 233, 233);
   width: 120px;
 }
-
+.selectionDropdown{
+  border: 1px solid rgb(233, 233, 233);
+  width: 140px;
+}
 .needHelp{
   margin-top: 70px;
   display: flex;
@@ -138,5 +141,45 @@ Typography Modal
 box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
 }
 .typographyModalIcon{
-  
+
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;  
+  background: #c8cacc;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+  border-radius: 50%; 
+  background: #ffff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.rangeValue{
+  padding: 4px 8px;
+width: 5rem;
+border-radius: 5px;
+border: 1px solid rgb(233, 233, 233);
+font-weight: 500;
+margin-left: 15px;
 }

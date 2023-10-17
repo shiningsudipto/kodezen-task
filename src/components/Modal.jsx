@@ -1,8 +1,10 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
+import '../utils/range'
 
 import { GrRotateLeft } from 'react-icons/gr';
 import { BiPlus } from 'react-icons/bi';
+import ModalActions from './ModalActions';
 
 const Modal = ({ isOpen, setIsOpen }) => {
 
@@ -31,7 +33,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
                         <div className="fixed inset-0" />
                     </Transition.Child>
 
-                    <div className="fixed inset-0 overflow-y-auto mt-[10rem]">
+                    <div className="fixed inset-0 overflow-y-auto mt-[13rem]">
                         <div className="w-[21.7%] p-2 ">
                             <Transition.Child
                                 as={Fragment}
@@ -42,11 +44,11 @@ const Modal = ({ isOpen, setIsOpen }) => {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="dialogPanel rounded-sm transform overflow-hidden bg-white p-3 text-left transition-all">
+                                <Dialog.Panel className="dialogPanel rounded-sm transform overflow-hidden bg-white text-left transition-all">
                                     {/* Heading */}
                                     <Dialog.Title
                                         as="h3"
-                                        className="spaceBetween text-lg font-bold leading-6 text-gray-900"
+                                        className="spaceBetween text-lg font-bold leading-6 text-gray-900 pb-3 p-2 shadow-md mb-5"
                                     >
                                         Typography
                                         <div className='flex'>
@@ -55,8 +57,8 @@ const Modal = ({ isOpen, setIsOpen }) => {
                                         </div>
                                     </Dialog.Title>
                                     {/* Body */}
-                                    <div className="mt-2">
-
+                                    <div className="p-2">
+                                        <ModalActions />
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>
