@@ -2,6 +2,7 @@ const RightSidebar = ({ formData }) => {
     return (
         <div className="rightSidebar">
             <p>you can</p>
+            {/* Applying all styles dynamically */}
             <h2
                 style={{
                     fontSize: formData?.fontSizeValue + formData?.fontSizeValueUnit,
@@ -12,8 +13,8 @@ const RightSidebar = ({ formData }) => {
                     fontFamily: formData?.fontFamily,
                     fontStyle: formData?.fontStyle,
                     lineHeight: formData?.lineHeightValue + formData?.lineHeightValueUnit,
-                    letterSpacing: formData?.letterSpacingValue,
-                    wordSpacing: formData?.wordSpacingValue
+                    letterSpacing: formData?.letterSpacingValue + formData?.letterSpacingValueUnit,
+                    wordSpacing: formData?.wordSpacingValue + formData?.wordSpacingValueUnit
                 }}
                 className=""
             >

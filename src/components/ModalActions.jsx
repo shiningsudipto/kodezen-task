@@ -1,33 +1,10 @@
-import { useState } from "react";
 
 import { LuMonitor } from 'react-icons/lu';
 
 const ModalActions = ({ formData, setFormData }) => {
-
-    // const [fontsizeValue, setFontSizeValue] = useState(50);
-    // const [lineHeightValue, setLineHeightValue] = useState(13);
-    // const [letterSpacingValue, setLetterSpacingValue] = useState(0);
-    // const [wordSpacingValue, setWordSpacingValue] = useState(0);
-
+    // Typography Actions State Console
     console.log(formData);
-
-    // const handleSizeSliderChange = (event) => {
-    //     const newValue = event.target.value;
-    //     setfontSizeValue(newValue);
-    // };
-    // const handleLineHeightSliderChange = (event) => {
-    //     const newValue = event.target.value;
-    //     setLineHeightValue(newValue);
-    // };
-    // const handleLetterSpacingSliderChange = (event) => {
-    //     const newValue = event.target.value;
-    //     setLetterSpacingValue(newValue);
-    // };
-    // const handleWordSpacingSliderChange = (event) => {
-    //     const newValue = event.target.value;
-    //     setWordSpacingValue(newValue);
-    // };
-
+    // Function for taking value from onchange event and set value to the state
     const handleChange = (e) => {
         const { name, value, type } = e.target;
         setFormData({
@@ -39,6 +16,7 @@ const ModalActions = ({ formData, setFormData }) => {
     return (
         <div>
             <form>
+                {/* Font family */}
                 <div className="spaceBetween">
                     <p>Family</p>
                     <select
@@ -52,12 +30,14 @@ const ModalActions = ({ formData, setFormData }) => {
                         <option value="Calibri">Calibri</option>
                     </select>
                 </div>
+                {/* Font size */}
                 <div className="actionGap">
                     <div className="spaceBetween actionGap">
                         <div className="flex">
                             <p className="me-1">Size</p>
                             <LuMonitor />
                         </div>
+                        {/* Font size utility */}
                         <select
                             name="fontSizeValueUnit"
                             defaultValue={formData?.fontSizeValueUnit}
@@ -69,6 +49,7 @@ const ModalActions = ({ formData, setFormData }) => {
                             <option value="vh">vh</option>
                         </select>
                     </div>
+                    {/* Font size range */}
                     <div className="slidecontainer spaceBetween">
                         <input
                             name="fontSizeValue"
@@ -83,6 +64,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         <p className="rangeValue">{formData?.fontSizeValue}</p>
                     </div>
                 </div>
+                {/* Font weight */}
                 <div className="spaceBetween">
                     <p>Weight</p>
                     <select
@@ -95,6 +77,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         <option value="400">400 (Normal)</option>
                     </select>
                 </div>
+                {/* Text transform */}
                 <div className="spaceBetween actionGap">
                     <p>Transform</p>
                     <select
@@ -107,6 +90,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         <option value="lowercase">Lowercase</option>
                     </select>
                 </div>
+                {/* Font style */}
                 <div className="spaceBetween actionGap">
                     <p>Style</p>
                     <select
@@ -119,6 +103,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         <option value="inherit">Inherit</option>
                     </select>
                 </div>
+                {/* Text decoration */}
                 <div className="spaceBetween actionGap">
                     <p>Decoration</p>
                     <select
@@ -132,12 +117,14 @@ const ModalActions = ({ formData, setFormData }) => {
                         <option value="dashed">Dashed</option>
                     </select>
                 </div>
+                {/* Line height */}
                 <div className="actionGap">
                     <div className="spaceBetween actionGap">
                         <div className="flex">
                             <p className="me-1">Line-Height</p>
                             <LuMonitor />
                         </div>
+                        {/* Line height utility */}
                         <select
                             name="lineHeightValueUnit"
                             defaultValue={formData?.lineHeightValueUnit}
@@ -150,6 +137,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         </select>
                     </div>
                     <div className="slidecontainer spaceBetween">
+                        {/* Line height range */}
                         <input
                             name="lineHeightValue"
                             defaultValue={formData?.lineHeightValue}
@@ -163,12 +151,14 @@ const ModalActions = ({ formData, setFormData }) => {
                         <p className="rangeValue">{formData?.lineHeightValue}</p>
                     </div>
                 </div>
+                {/* Letter spacing */}
                 <div className="actionGap">
                     <div className="spaceBetween actionGap">
                         <div className="flex">
                             <p className="me-1">Letter Spacing</p>
                             <LuMonitor />
                         </div>
+                        {/* Letter spacing utility */}
                         <select
                             name="letterSpacingValueUnit"
                             defaultValue={formData?.letterSpacingValueUnit}
@@ -181,6 +171,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         </select>
                     </div>
                     <div className="slidecontainer spaceBetween">
+                        {/* Letter spacing range */}
                         <input
                             name="letterSpacingValue"
                             defaultValue={formData?.letterSpacingValue}
@@ -194,12 +185,14 @@ const ModalActions = ({ formData, setFormData }) => {
                         <p className="rangeValue">{formData?.letterSpacingValue}</p>
                     </div>
                 </div>
+                {/* Word spacing */}
                 <div className="actionGap">
                     <div className="spaceBetween actionGap">
                         <div className="flex">
                             <p className="me-1">Word Spacing</p>
                             <LuMonitor />
                         </div>
+                        {/* Word spacing utility */}
                         <select
                             name="wordSpacingValueUnit"
                             defaultValue={formData?.wordSpacingValueUnit}
@@ -212,6 +205,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         </select>
                     </div>
                     <div className="slidecontainer spaceBetween">
+                        {/* Word spacing range */}
                         <input
                             name="wordSpacingValue"
                             defaultValue={formData?.wordSpacingValue}

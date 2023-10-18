@@ -1,6 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
-import '../utils/range'
 
 import { GrRotateLeft } from 'react-icons/gr';
 import { BiPlus } from 'react-icons/bi';

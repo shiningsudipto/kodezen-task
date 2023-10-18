@@ -3,10 +3,10 @@ import LeftSidebar from "./components/LeftSidebar"
 import RightSidebar from "./components/RightSidebar"
 
 function App() {
-
+  // Typography actions value storing state
   const [formData, setFormData] = useState({
-    fontSizeValue: 20,
-    lineHeightValue: 13,
+    fontSizeValue: 25,
+    lineHeightValue: 30,
     letterSpacingValue: 0,
     wordSpacingValue: 0,
     fontFamily: "",
@@ -14,17 +14,25 @@ function App() {
     textTransform: "none",
     fontStyle: "normal",
     textDecoration: "none",
-    fontSizeValueUnit: "",
-    lineHeightValueUnit: "",
-    letterSpacingValueUnit: "",
-    wordSpacingValueUnit: "",
+    fontSizeValueUnit: "px",
+    lineHeightValueUnit: "px",
+    letterSpacingValueUnit: "px",
+    wordSpacingValueUnit: "px",
   });
 
   return (
     <>
+      {/* Layout */}
       <div className="mainLayout">
-        <LeftSidebar formData={formData} setFormData={setFormData}></LeftSidebar>
-        <RightSidebar formData={formData}></RightSidebar>
+        {/* Left Side */}
+        <LeftSidebar
+          formData={formData}
+          setFormData={setFormData}>
+        </LeftSidebar>
+        {/* Right Side */}
+        <RightSidebar
+          formData={formData}>
+        </RightSidebar>
       </div>
     </>
   )
