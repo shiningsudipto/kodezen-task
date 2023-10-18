@@ -31,6 +31,16 @@
   margin: 15px 0;
 }
 
+.selectIconStyled {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance:none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+
 /* ==========
 Layout
 ============*/
@@ -136,9 +146,6 @@ Typography Modal
 .dialogPanel{
 box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
 }
-.typographyModalIcon{
-
-}
 
 .slider {
   -webkit-appearance: none;
@@ -176,6 +183,5 @@ box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.3);
 width: 5rem;
 border-radius: 5px;
 border: 1px solid rgb(233, 233, 233);
-font-weight: 500;
 margin-left: 15px;
 }

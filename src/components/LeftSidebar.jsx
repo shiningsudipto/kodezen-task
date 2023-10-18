@@ -72,7 +72,7 @@ const LeftSidebar = ({ formData, setFormData }) => {
                     {/* Blend Mode */}
                     <div className="blendMode spaceBetween">
                         <p>Blend Mode</p>
-                        <select className='blendModeDropdown' name="" id="">
+                        <select className='blendModeDropdown selectIconStyled' name="" id="">
                             <option value="">Normal</option>
                             <option value="">Hard</option>
                         </select>

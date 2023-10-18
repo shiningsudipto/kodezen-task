@@ -11,10 +11,6 @@ const Modal = ({ isOpen, setIsOpen, formData, setFormData }) => {
         setIsOpen(false)
     }
 
-    function openModal() {
-        setIsOpen(true)
-    }
-
     return (
         <>
 
@@ -32,7 +28,7 @@ const Modal = ({ isOpen, setIsOpen, formData, setFormData }) => {
                         <div className="fixed inset-0" />
                     </Transition.Child>
 
-                    <div className="fixed inset-0 overflow-y-auto mt-[10.5rem]">
+                    <div className="fixed inset-0 overflow-y-auto mt-[210px]">
                         <div className="w-[21.7%] min-w-[270px] p-2 ">
                             <Transition.Child
                                 as={Fragment}

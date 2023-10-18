@@ -23,7 +23,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         name="fontFamily"
                         defaultValue={formData?.fontFamily}
                         onChange={handleChange}
-                        className='selectionDropdown' id="">
+                        className='selectionDropdown selectIconStyled' id="">
                         <option value="">Roboto</option>
                         <option value="Sans Serif">Sans Serif</option>
                         <option value="Arial Black">Arial Black</option>
@@ -71,7 +71,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         name="fontWeight"
                         defaultValue={formData?.fontWeight}
                         onChange={handleChange}
-                        className='selectionDropdown' id="">
+                        className='selectionDropdown selectIconStyled' id="">
                         <option value="600">600 (Semi Bold)</option>
                         <option value="700">700 (Bold)</option>
                         <option value="400">400 (Normal)</option>
@@ -84,7 +84,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         name="textTransform"
                         defaultValue={formData?.textTransform}
                         onChange={handleChange}
-                        className='selectionDropdown' id="">
+                        className='selectionDropdown selectIconStyled' id="">
                         <option value="none">Default</option>
                         <option value="uppercase">Uppercase</option>
                         <option value="lowercase">Lowercase</option>
@@ -97,7 +97,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         name="fontStyle"
                         defaultValue={formData?.fontStyle}
                         onChange={handleChange}
-                        className='selectionDropdown' id="">
+                        className='selectionDropdown selectIconStyled' id="">
                         <option value="normal">Default</option>
                         <option value="italic">Italic</option>
                         <option value="inherit">Inherit</option>
@@ -110,7 +110,7 @@ const ModalActions = ({ formData, setFormData }) => {
                         name="textDecoration"
                         defaultValue={formData?.textDecoration}
                         onChange={handleChange}
-                        className='selectionDropdown' id="">
+                        className='selectionDropdown selectIconStyled' id="">
                         <option value="none">Default</option>
                         <option value="solid">Solid</option>
                         <option value="dotted">Dotted</option>
